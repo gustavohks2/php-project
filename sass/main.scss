@@ -1,0 +1,14 @@
+// All SCSS partials imports
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+@import "base/reset";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/navigation";
+
+@import "layout/header";
