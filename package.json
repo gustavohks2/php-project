@@ -1,0 +1,22 @@
+{
+  "name": "php_course",
+  "version": "1.0.0",
+  "description": "A sample PHP web app",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass --watch sass/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavohks2/php-project.git"
+  },
+  "author": "Gustavo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gustavohks2/php-project/issues"
+  },
+  "homepage": "https://github.com/gustavohks2/php-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
