@@ -1,0 +1,21 @@
+.btn {
+  cursor: pointer;
+  height: 3.55rem;
+  width: 10rem;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+
+  &--block { display: block; }
+
+  &--blue {
+    color: $color-white;
+    background-color: $color-blue-light;
+  }
+
+  &--rounded { 
+    border-radius: 100px; 
+    width: 20rem;
+    height: 5rem;
+  }
+}

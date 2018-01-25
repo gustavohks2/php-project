@@ -2,3 +2,19 @@ body {
   font-family: "Lato", sans-serif;
   color: $color-gray-dark;
 }
+
+.heading-primary {
+  color: $color-white;
+
+  &--main {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transform: translateX(5px); // Final blank space fix
+  }
+
+  &--sub {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
