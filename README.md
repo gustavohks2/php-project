@@ -1,2 +1,2 @@
 # php-project
-A sample PHP web app
+A sample PHP Login System
