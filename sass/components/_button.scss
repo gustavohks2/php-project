@@ -1,21 +1,27 @@
 .btn {
-  cursor: pointer;
-  height: 3.55rem;
-  width: 10rem;
-  border-radius: 2px;
-  font-size: 1.6crem;
-  border: none;
-  outline: none;
 
-  &--block { display: block; }
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-decoration: none;
+  }
+
+  &--block { display: block; width: 10rem; height: 3.55rem; }
 
   &--blue {
     color: $color-white;
+    border-radius: 2px;
     background-color: $color-blue-light;
   }
 
   &--rounded { 
     border-radius: 100px; 
+    line-height: 5rem;
     width: 20rem;
     height: 5rem;
   }

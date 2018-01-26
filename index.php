@@ -15,7 +15,7 @@
   </head>
   <body>
     
-    <header class="header">
+    <header class="header" id="#header">
       <div class="navigation">
         <div class="navigation__logo-box">
           <i class="navigation__logo">&lt;/&gt;</i>
@@ -49,13 +49,15 @@
           </div>
         </div>
         
-        <button class="btn btn--rounded btn--blue u-animation-fadein">Sign up</button>
+        <a href="#signup-popup" class="btn btn--rounded btn--blue u-animation-fadein">Sign up</a>
       </div>
     </header>
 
     <main>
-      <section class="sinup-popup">
-
+      <section class="signup-popup" id="signup-popup">
+        <div class="signup-popup__content">
+          <a href="#header" class="signup-popup__close">&times;</a>
+        </div>
       </section>
     </main>
   </body>
