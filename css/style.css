@@ -70,10 +70,6 @@ body {
   animation: fadeIn .4s ease-out forwards;
   animation-delay: 1.2s; }
 
-.u-animation-fadein:nth-child(4) {
-  animation: fadeIn .4s ease-out forwards;
-  animation-delay: 1.6s; }
-
 .u-text-underlined {
   padding-bottom: .2rem;
   border-bottom: 0.4rem solid rgba(255, 255, 255, 0.7); }
@@ -113,7 +109,10 @@ body {
   .navigation__input {
     padding: .5rem 1.4rem;
     display: block;
-    width: 25rem; }
+    width: 25rem;
+    border-radius: 2px;
+    border: none;
+    height: 3.55rem; }
   .navigation__input:focus, .navigation__input:required, .navigation__input:invalid {
     outline: none;
     box-shadow: none; }
@@ -127,6 +126,7 @@ body {
   height: 3.55rem;
   width: 10rem;
   border-radius: 2px;
+  font-size: 1.6crem;
   border: none;
   outline: none; }
   .btn--block {

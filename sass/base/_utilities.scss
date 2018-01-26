@@ -12,7 +12,7 @@
   transform: translate3d(0, 2rem, 0);
 }
 
-@for $i from 1 through 4 {
+@for $i from 1 through 3 {
   .u-animation-fadein:nth-child(#{$i}) {
     animation: fadeIn .4s ease-out forwards;
     animation-delay: $i * .4s;

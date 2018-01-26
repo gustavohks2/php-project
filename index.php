@@ -42,10 +42,10 @@
           <i class="header__logo">&lt;/&gt;</i>
         </div>
   
-        <div class="header__text-box">
+        <div class="header__text-box u-animation-fadein">
           <div class="heading-primary u-margin-top-medium u-margin-bottom-medium">
               <h1 class="heading-primary--main u-animation-fadein">Dev Solutions</h1>
-              <h2 class="heading-primary--sub u-animation-fadein"><span class="u-text-underlined">Sign up</span> today and discover awesome things!</h2>
+              <h2 class="heading-primary--sub "><span class="u-text-underlined">Sign up</span> today and discover awesome things!</h2>
           </div>
         </div>
         
