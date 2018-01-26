@@ -325,12 +325,12 @@ body {
     height: 450px;
     background-color: #ffffff;
     border-radius: 3px;
-    transition: all .25s .1s;
+    transition: all 0.25s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%) scale(0.15); }
+    transform: translate(-50%, -50%) scale(0.1); }
   .signup-popup:target .signup-popup__content {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1; }
