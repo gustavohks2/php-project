@@ -56,7 +56,8 @@
     <main>
       <section class="signup-popup" id="signup-popup">
         <div class="signup-popup__content">
-          <a href="#header" class="signup-popup__close">&times;</a>
+          <a href="#" class="signup-popup__close">&times;</a>
+          <a href="grid.php">Grid Test</a>
         </div>
       </section>
     </main>

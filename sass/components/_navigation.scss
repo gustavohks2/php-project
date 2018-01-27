@@ -33,8 +33,8 @@
 
   &__form {
     float: right;
-    display: inline-block;
     line-height: 4.4rem;
+    display: inline-block;
   }
 
   &__form-group {
@@ -42,12 +42,14 @@
   }
 
   &__input {
-    padding: .5rem 1.4rem;
-    display: block;
     width: 25rem;
-    border-radius: 2px;
     border: none;
+    display: block;
     height: 3.55rem;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    padding: .5rem 1.4rem;
+    color: $color-gray-dark-2;
   }
 
   &__input:focus,
