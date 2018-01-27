@@ -10,12 +10,18 @@
     text-decoration: none;
   }
 
-  &--block { display: block; width: 10rem; height: 3.55rem; }
+  &--block { display: block; width: 10rem; height: 3.55rem;}
 
   &--blue {
-    color: $color-white;
     border-radius: 2px;
+    color: $color-white;
     background-color: $color-blue-light;
+  }
+
+  &--purple {
+    border-radius: 2px;
+    color: $color-white;
+    background-color: lighten($color-primary-dark, 25%);
   }
 
   &--rounded { 

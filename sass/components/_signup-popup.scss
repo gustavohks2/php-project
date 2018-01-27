@@ -19,11 +19,20 @@
   &__content {
     opacity: 0;
     width: 65%;
-    height: 450px;
+    padding: 4rem;
+    height: 52rem;
+    position: relative;
     background-color: $color-white;
     border-radius: $default-border-radius;
     box-shadow: 0 0 3rem rgba($color-black, .3);
     transition: all .25s .1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    background-image:
+      linear-gradient(-102deg,
+        transparent 0%, transparent 49%, rgba($color-white, .7) 49%, rgba($color-white, .7) 100%),
+      url("../img/dev-sol-2.jpg");
+    background-size: cover;
+    background-position: right;
 
     @include transform-center;
     transform: translate(-50%, -50%) scale(.1);
@@ -36,7 +45,7 @@
 
   &__close {
     line-height: .6;
-    color: $color-blue-light;
+    color: $color-white;
     text-decoration: none;
     font-size: 2.3rem;
     font-weight: 900;
@@ -44,5 +53,19 @@
     position: absolute;
     right: 2.3rem;
     top: 2rem;
+  }
+
+  &__call { 
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-weight: 100;
+    max-width: 26rem;
+    text-align: center;
+    font-size: 4rem;
+    color: $color-white;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    transform: translateY(-50%);
   }
 }
