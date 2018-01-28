@@ -356,8 +356,8 @@ body {
   cursor: pointer; }
   .form__radio-button::after {
     content: "";
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 120%;
+    height: 120%;
     border-radius: 50%;
     background-color: #5800aa;
     position: absolute;

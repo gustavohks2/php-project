@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- ----------  META --------- -->
     <meta charset="UTF-8">
     <meta name="robots" content="follow">
     <meta name="author" content="Gustavo Henrique">
@@ -17,6 +18,7 @@
   </head>
   <body>
     
+  <!-- ----------  HEADER --------- -->
     <header class="header" id="#header">
       <div class="navigation">
         <div class="navigation__logo-box">
@@ -47,7 +49,7 @@
         <div class="header__text-box u-animation-fadein">
           <div class="heading-primary u-margin-top-medium u-margin-bottom-medium">
               <h1 class="heading-primary--main u-animation-fadein">Dev Solutions</h1>
-              <h2 class="heading-primary--sub "><span class="u-text-underlined">Sign up</span> today and discover awesome things!</h2>
+              <h2 class="heading-primary--sub"><span class="u-text-underlined">Sign up</span> today and discover awesome things!</h2>
           </div>
         </div>
         
@@ -55,7 +57,9 @@
       </div>
     </header>
 
+    <!-- ----------  MAIN CONTENT --------- -->
     <main>
+      <!-- ----------  SIGN UP FORM POPUP --------- -->
       <div class="signup-popup" id="signup-popup">
         <div class="signup-popup__content">
           <a href="#" class="signup-popup__close">&times;</a>
@@ -102,14 +106,14 @@
                   </label>
                 </div>
 
-                <input class="btn btn--rounded btn--purple u-margin-top-small" type="submit" value="Send">
+                <input class="btn btn--rounded btn--purple u-margin-top-small" name="submit" type="submit" value="Send">
                 
               </form>
             </div>
           </div>
           <h2 class="signup-popup__call">We develop your needs!</h2>
         </div>
-      </div>
-    </main>
+      </div><!-- ----------  END SIGN UP FORM POPUP --------- -->
+    </main> <!-- ----------  END MAIN CONTENT --------- -->
   </body>
 </html>
