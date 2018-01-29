@@ -52,6 +52,9 @@
     color: $color-gray-dark-2;
   }
 
+  // Small password bullets fix
+  &__input:not(:placeholder-shown)[type="password"] {font-size: .9rem; }
+
   &__input:focus,
   &__input:required,
   &__input:invalid { 

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -27,16 +28,16 @@
   
         <h3 class="navigation__heading">Dev Solutions</h3>
         
-        <form class="navigation__form">
+        <form action="includes/inc.login.php" method="POST" class="navigation__form">
           <div class="navigation__form-group">
             <label class="navigation__label" for="username">Username</label>
-            <input id="username" type="text" class="navigation__input" placeholder="Username" required>
+            <input id="username" type="text" class="navigation__input" name="username" placeholder="Username" required>
           </div>
           <div class="navigation__form-group">
             <label class="navigation__label" for="password">Password</label>
-            <input id="password" type="password" class="navigation__input" placeholder="Password" required>
+            <input id="password" type="password" class="navigation__input" name="password" placeholder="Password" required>
           </div>
-          <button class="btn btn--blue btn--block" type="submit">Login</button>
+          <input class="btn btn--blue btn--block" type="submit" name="submit" value="Login">
         </form>
       </div>
 
@@ -59,61 +60,67 @@
 
     <!-- ----------  MAIN CONTENT --------- -->
     <main>
-      <!-- ----------  SIGN UP FORM POPUP --------- -->
-      <div class="signup-popup" id="signup-popup">
-        <div class="signup-popup__content">
-          <a href="#" class="signup-popup__close">&times;</a>
-          <div class="row">
-            <div class="col-1-of-2">
-              <h2 class="heading-tertiary heading-tertiary--gray u-margin-bottom-small">Sign Up</h2>
-              <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-
-                <div class="form__group">
-                  <input class="form__input" id="name" type="text" name="name" placeholder="Name">
-                  <label class="form__label" for="name">Name</label>
-                </div>
-
-                <div class="form__group">
-                  <input class="form__input" id="email" type="email" name="email" placeholder="E-mail" autocomplete="off">
-                  <label class="form__label" for="E-mail">E-mail</label>
-                </div>
-
-                <div class="form__group">
-                  <input class="form__input" id="username" type="text" name="username" placeholder="Username">
-                  <label class="form__label" for="username">Username</label>
-                </div>
-
-                <div class="form__group">
-                  <input class="form__input" id="password" type="password" name="password" placeholder="Password">
-                  <label class="form__label" for="password">Password</label>
-                </div>
-
-                <span class="form__radio-caption">Gender:</span>
-
-                <div class="form__radio-group">
-                  <input class="form__radio-input" id="male" type="radio" name="gender" value="male">
-                  <label class="form__radio-label" for="male">
-                    <span class="form__radio-button"></span>
-                    Male
-                  </label>
-                </div>
-
-                <div class="form__radio-group">
-                  <input class="form__radio-input" id="female" type="radio" name="gender" value="female">
-                  <label class="form__radio-label" for="female">
-                    <span class="form__radio-button"></span>
-                    Female
-                  </label>
-                </div>
-
-                <input class="btn btn--rounded btn--purple u-margin-top-small" name="submit" type="submit" value="Send">
-                
-              </form>
-            </div>
-          </div>
-          <h2 class="signup-popup__call">We develop your needs!</h2>
-        </div>
-      </div><!-- ----------  END SIGN UP FORM POPUP --------- -->
+      <?php
+        if(isset($_SESSION)) {
+          # CODE
+        }
+      ?>
     </main> <!-- ----------  END MAIN CONTENT --------- -->
+
+    <!-- ----------  SIGN UP FORM POPUP --------- -->
+    <div class="signup-popup" id="signup-popup">
+      <div class="signup-popup__content">
+        <a href="#" class="signup-popup__close">&times;</a>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h2 class="heading-tertiary heading-tertiary--gray u-margin-bottom-small">Sign Up</h2>
+            <form class="form" action="includes/inc.signup.php" method="POST">
+
+              <div class="form__group">
+                <input class="form__input" id="name" type="text" name="name" placeholder="Name" required>
+                <label class="form__label" for="name">Name</label>
+              </div>
+
+              <div class="form__group">
+                <input class="form__input" id="email" type="email" name="email" placeholder="E-mail" required>
+                <label class="form__label" for="E-mail">E-mail</label>
+              </div>
+
+              <div class="form__group">
+                <input class="form__input" id="username" type="text" name="username" placeholder="Username" required>
+                <label class="form__label" for="username">Username</label>
+              </div>
+
+              <div class="form__group">
+                <input class="form__input" id="password" type="password" name="password" placeholder="Password" required>
+                <label class="form__label" for="password">Password</label>
+              </div>
+
+              <span class="form__radio-caption">Gender:</span>
+
+              <div class="form__radio-group">
+                <input class="form__radio-input" id="male" type="radio" name="gender" value="m">
+                <label class="form__radio-label" for="male">
+                  <span class="form__radio-button"></span>
+                  Male
+                </label>
+              </div>
+
+              <div class="form__radio-group">
+                <input class="form__radio-input" id="female" type="radio" name="gender" value="f">
+                <label class="form__radio-label" for="female">
+                  <span class="form__radio-button"></span>
+                  Female
+                </label>
+              </div>
+
+              <input class="btn btn--rounded btn--purple u-margin-top-small" name="submit" type="submit" value="Send">
+              
+            </form>
+          </div>
+        </div>
+        <h2 class="signup-popup__call">We develop your needs!</h2>
+      </div>
+    </div><!-- ----------  END SIGN UP FORM POPUP --------- -->
   </body>
 </html>

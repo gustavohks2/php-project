@@ -15,26 +15,29 @@
   }
 
   &__input {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: rgba($color-white, .4);
+    width: 90%;
     border: none;
     outline: none;
-    padding: 1.2rem 1.5rem;
     font-size: 1.4rem;
-    border-radius: $default-border-radius;
-    width: 90%;
+    -moz-appearance: none;
+    height: 4.3rem;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 1.2rem 1.5rem;
+    color: $color-gray-dark-3;
     transition: all 50ms ease-in-out;
+    border-radius: $default-border-radius;
+    background-color: rgba($color-white, .4);
   }
 
-  input[type="password"]:not(:placeholder-shown) { font-size: 1.1rem; }
+  input[type="password"]:not(:placeholder-shown) { font-size: .9rem; }
 
   &__input:placeholder-shown + &__label {
     font-size: 1.15rem;
     transform: translateY(3rem);
   }
 
+  &__input:not(:focus):required { border-bottom: none; box-shadow: none; }
   &__input:focus { box-shadow: 0 0 2rem rgba($color-black, .15); }
   &__input:invalid { border-bottom: 3px solid $color-primary-light; }
   &__input:focus:valid { border-bottom: 3px solid $color-blue-light; }
@@ -66,7 +69,7 @@
   &__radio-button {
     width: 2.6rem;
     height: 2.6rem;
-    border: 4px solid $color-primary-dark;
+    border: 4px solid lighten($color-primary-dark, 25%  );
     display: inline-block;
     border-radius: 50%;
     transform: translateY(.7rem);
@@ -78,7 +81,7 @@
       width: 120%;
       height: 120%;
       border-radius: 50%;
-      background-color: $color-primary-dark;
+      background-color: lighten($color-primary-dark, 25%);
       position: absolute;
       transition: opacity .3s ease-in-out;
       opacity: 0;
